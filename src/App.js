@@ -44,7 +44,7 @@ function App() {
             return prevTimer - 1;
           }
         });
-      }, 100);
+      }, 1000);
       setIntervalId(newIntervalId);
       setActive(true);
 
