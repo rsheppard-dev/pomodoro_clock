@@ -88,6 +88,7 @@ function App() {
     audio.current.load();
     clearInterval(intervalId);
     setIntervalId(undefined);
+    setBgColor(styles.main);
     setSessionLength(25);
     setBreakLength(5);
     setSessionState('Session');
