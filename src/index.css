@@ -12,11 +12,8 @@ html {
 
 body {
   width: 100%;
-  background-color: #4158D0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#4158D0), color-stop(46%, #C850C0), to(#FFCC70));
-  background-image: linear-gradient(to bottom right, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  -webkit-transition: background-color, 1s ease;
+  transition: background-color, 1s ease;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
@@ -28,6 +25,12 @@ h1 {
 }
 
 h2 {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.8em;
   font-weight: 400;
 }
 
@@ -115,13 +118,19 @@ h2 {
 .App #buttons button {
   margin: 0 1em;
   background: #fff;
-  color: #e43a15;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
   padding: 0.5em;
   border: none;
   font-size: 1em;
   border-radius: 0.5em;
   cursor: pointer;
-  padding: 1em 2em;
+  padding: 0.8em 2em;
+  border-bottom: 0.5em solid #ddd;
+}
+
+.App #buttons button:hover {
+  border-bottom: none;
 }
 
 #session-container, #break-container {

@@ -13,7 +13,7 @@ export default function Break({ length, setLength, active }) {
 
     return (
         <section id="break-settings">
-            <h2 id="break-label">Break Length</h2>
+            <h3 id="break-label">Break Length</h3>
             <div id="break-container">
                 <div>
                     <button onClick={handleIncrement} id="break-increment" disabled={active}>

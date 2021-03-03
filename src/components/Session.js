@@ -21,7 +21,7 @@ export default function Session({ length, setLength, setTimer, active }) {
 
     return (
         <section id="session-settings">
-            <h2 id="session-label">Session Length</h2>
+            <h3 id="session-label">Session Length</h3>
             <div id="session-container">
                 <div>
                     <button onClick={handleIncrement} id="session-increment" disabled={active}>
