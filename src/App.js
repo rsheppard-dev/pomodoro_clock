@@ -56,6 +56,8 @@ function App() {
       } else {
         setBgColor(styles.main);
       }
+    } else {
+      setBgColor(styles.main);
     }
 
     document.body.style.backgroundColor = bgColor;
