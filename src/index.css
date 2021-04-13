@@ -40,7 +40,7 @@ h3 {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: "header header" "session break" "timer timer" "buttons buttons";
+      grid-template-areas: "header header" "session break" "timer timer" "buttons buttons";
   gap: 2em;
   text-align: center;
   padding: 2em;
@@ -164,5 +164,19 @@ h3 {
 #session-length, #break-length {
   width: 1em;
   font-size: 1.1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+        grid-template-areas: "header header" "session session" "break break" "timer timer" "buttons buttons";
+  }
+  #session-settings {
+    -ms-grid-column-align: center !important;
+        justify-self: center !important;
+  }
+  #break-settings {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */

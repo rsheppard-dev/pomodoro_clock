@@ -132,6 +132,24 @@ h3 {
 
 #session-length, #break-length {
   width: 1em;
-  font-size: 1.1em;
-  
+  font-size: 1.1em; 
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    grid-template-areas:
+    "header header"
+    "session session"
+    "break break"
+    "timer timer"
+    "buttons buttons";
+  }
+
+  #session-settings {
+    justify-self: center !important;
+  }
+
+  #break-settings {
+    justify-self: center;
+  }
 }

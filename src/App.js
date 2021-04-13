@@ -53,8 +53,6 @@ function App() {
         setBgColor(styles.second);
       } else if (percentage < 100) {
         setBgColor(styles.first);
-      } else {
-        setBgColor(styles.main);
       }
     } else {
       setBgColor(styles.main);
