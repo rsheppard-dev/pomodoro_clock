@@ -178,5 +178,9 @@ h3 {
     -ms-grid-column-align: center;
         justify-self: center;
   }
+  h1 {
+    font-size: 3em !important;
+    letter-spacing: normal !important;
+  }
 }
 /*# sourceMappingURL=index.css.map */
